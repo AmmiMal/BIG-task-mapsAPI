@@ -22,7 +22,6 @@ class Example(QWidget):
         self.zoom = 10
         self.map_params = {
             "ll": self.ll,
-            # "spn": self.spn,
             "l": self.l_map,
             "z": self.zoom}
         self.getImage()
