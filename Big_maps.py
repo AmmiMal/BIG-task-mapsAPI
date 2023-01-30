@@ -40,12 +40,12 @@ class Example(QWidget):
         self.reload()
 
     def keyPressEvent(self, event):
-        if event.key() == Qt.Key_Down:
+        if event.key() == Qt.Key_PageDown:
             self.zoom = self.zoom - 1 if self.zoom > 0 else self.zoom
             self.map_params['z'] = self.zoom
             self.getImage()
             self.reload()
-        if event.key() == Qt.Key_Up:
+        if event.key() == Qt.Key_PageUp:
             self.zoom = self.zoom + 1 if self.zoom < 17 else self.zoom
             self.map_params['z'] = self.zoom
             self.getImage()
